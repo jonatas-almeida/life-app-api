@@ -56,10 +56,12 @@ namespace Life.WebAPI
             app.UseAuthorization();
             app.UseAuthentication();
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyyHeader());
+            app.UseStaticFiles();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+            app.UseMvc();
         }
     }
 }
