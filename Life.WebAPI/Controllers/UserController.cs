@@ -48,7 +48,7 @@ namespace Life.WebAPI.Controllers
         }
 
 
-        //Método register
+        //Método Register
         [HttpPost("Register")]
         [AllowAnonymous]
         public async Task<IActionResult> Register(UserDto userDto)

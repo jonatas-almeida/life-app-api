@@ -17,7 +17,7 @@ namespace Life.WebAPI.Helpers
                }).ReverseMap();
 
             //CONTINUAR DAQUI
-            //Analisar a classe de Dtos de Médicos e Consultas
+            //Analisar as classes de Dtos de Médicos e Consultas
         }
     }
 }
