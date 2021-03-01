@@ -1,4 +1,5 @@
-﻿using System.Threading.Task;
+﻿using System.Threading.Tasks;
+using Life.Domain;
 
 namespace Life.Repository
 {
@@ -18,7 +19,7 @@ namespace Life.Repository
 
         Task<Consulta[]> GetAllConsultaAsync(bool includeDoctors);
 
-        Task<Consulta[]> GetEventoAsyncById(int ConsultaId, bool includeDoctors);
+        Task<Consulta[]> GetConsultaAsyncById(int ConsultaId, bool includeDoctors);
 
 
         //MÉDICOS
