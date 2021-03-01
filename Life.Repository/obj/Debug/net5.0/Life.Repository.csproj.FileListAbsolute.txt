@@ -1,0 +1,15 @@
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.Repository\bin\Debug\net5.0\Life.Repository.deps.json
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.Repository\bin\Debug\net5.0\Life.Repository.dll
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.Repository\bin\Debug\net5.0\ref\Life.Repository.dll
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.Repository\bin\Debug\net5.0\Life.Repository.pdb
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.Repository\bin\Debug\net5.0\Life.Domain.dll
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.Repository\bin\Debug\net5.0\Life.Domain.pdb
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.Repository\obj\Debug\net5.0\Life.Repository.csprojAssemblyReference.cache
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.Repository\obj\Debug\net5.0\Life.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.Repository\obj\Debug\net5.0\Life.Repository.AssemblyInfoInputs.cache
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.Repository\obj\Debug\net5.0\Life.Repository.AssemblyInfo.cs
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.Repository\obj\Debug\net5.0\Life.Repository.csproj.CoreCompileInputs.cache
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.Repository\obj\Debug\net5.0\Life.Repository.csproj.CopyComplete
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.Repository\obj\Debug\net5.0\Life.Repository.dll
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.Repository\obj\Debug\net5.0\ref\Life.Repository.dll
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.Repository\obj\Debug\net5.0\Life.Repository.pdb

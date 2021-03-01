@@ -39,3 +39,6 @@ C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.WebAPI\obj\Debug\net
 C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.WebAPI\obj\Debug\net5.0\Life.WebAPI.RazorTargetAssemblyInfo.cache
 C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.WebAPI\obj\Debug\net5.0\Life.WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.WebAPI\obj\Debug\net5.0\Life.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jonat\Desktop\Arquivos\Coding\C#\life-app-api\Life.WebAPI\obj\Debug\net5.0\Life.WebAPI.MvcApplicationPartsAssemblyInfo.cache
