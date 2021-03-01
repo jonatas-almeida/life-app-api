@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -33,7 +32,7 @@ namespace Life.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -44,11 +43,11 @@ namespace Life.WebAPI
                 x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
             );
 
-            //Configuração geral
+            //Configuraï¿½ï¿½o geral
             IdentityBuilder builder = services.AddIdentityCore<User>(options =>
             {
                 //SENHA
-                //Resetando os valores padrões da validação de senha
+                //Resetando os valores padrï¿½es da validaï¿½ï¿½o de senha
                 options.Password.RequireDigit = false;
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireLowercase = false;
@@ -56,15 +55,15 @@ namespace Life.WebAPI
                 options.Password.RequiredLength = 5;
             });
 
-            //Instância do IdentityBuilder criado anteriormente (builder.Services)
-            //Consigurações do Context, das Roles e dos Usuários
+            //Instï¿½ncia do IdentityBuilder criado anteriormente (builder.Services)
+            //Consiguraï¿½ï¿½es do Context, das Roles e dos Usuï¿½rios
             builder = new IdentityBuilder(builder.UserType, typeof(Role), builder.Services);
             builder.AddEntityFrameworkStores<LifeContext>();
             builder.AddRoleValidator<RoleValidator<Role>>();
             builder.AddRoleManager<RoleManager<Role>>();
             builder.AddSignInManager<SignInManager<User>>();
 
-            //Configuração do JWT
+            //Configuraï¿½ï¿½o do JWT
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
             {
                 options.TokenValidationParameters = new TokenValidationParameters
@@ -80,21 +79,24 @@ namespace Life.WebAPI
                 };
             });
 
-            //Determina qual Controller será chamada
+            //Determina qual Controller serï¿½ chamada
             services.AddMvc(options =>
             {
-                //Toda vez que uma rota for chamada, ele vai requerir que o usuário esteja autenticado
-                //Na sequência ele irá usar o AuthorizeFilter para filtrar todas as reuisições que tiver
+                //Toda vez que uma rota for chamada, ele vai requerir que o usuï¿½rio esteja autenticado
+                //Na sequï¿½ncia ele irï¿½ usar o AuthorizeFilter para filtrar todas as reuisiï¿½ï¿½es que tiver
                 var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
                 options.Filters.Add(new AuthorizeFilter(policy));
+
+                //Para que a API funcione corretamente Ã© necessÃ¡rio desativar o Endpoint Routing, por causa das versÃµes dos pacotes
+                options.EnableEndpointRouting = false;
 
             }).AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-            });//Resolve qualquer looping infinito que houver entre as relações das entidades. Na versão 2.2 era feito da seguinte forma:
+            });//Resolve qualquer looping infinito que houver entre as relaï¿½ï¿½es das entidades. Na versï¿½o 2.2 era feito da seguinte forma:
             /*
              .AddJsonOptions(options => options.SerializerSettings.ReferenceLoopingHandling = Newtonsoft.Json.ReferenceLoopingHandling.Ignore);
-                A versão que está sendo utlizada atualmente é a 5.0.103
+                A versï¿½o que estï¿½ sendo utlizada atualmente ï¿½ a 5.0.103
              */
 
             services.AddAutoMapper();
